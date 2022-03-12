@@ -27,5 +27,11 @@ module Types
       Session.where(id: context[:session_id]).destroy_all
     end
 
+    field :test, String, null: false
+
+    def test 
+      "hello"
+    end
+
   end
 end
